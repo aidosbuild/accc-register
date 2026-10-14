@@ -60,6 +60,11 @@ const REQUEST_DELAY_MS = 400; // be polite between requests
 const MAX_PAGES = 100; // safety cap on pagination
 const MIN_RECORDS = 1; // a sane scrape returns at least this many
 const MAX_DROP_RATIO = 0.2; // abort if record count drops > 20% vs last good
+// The ACCC doesn't keep same-date cases in a fixed order between page requests,
+// so a case at the edge of a 20-row page can slip to the next page and be
+// missed. Cases seen in earlier runs are carried forward; one is dropped only
+// once it hasn't been seen in the listing for this long.
+const CARRY_FORWARD_DAYS = 14;
 
 // Public holidays the firm's business-days convention excludes: NSW public
 // holidays with weekend -> Monday substitution (matches the firm's workbook).
@@ -444,6 +449,7 @@ async function loadDetStore() {
 }
 
 async function main() {
+  const runAt = new Date().toISOString();
   const previous = await loadPrevious();
   const prevByCase = new Map();
   if (previous?.records) {
@@ -485,6 +491,44 @@ async function main() {
     );
   }
 
+  // 1b. Carry forward cases from the last data.json that this run's listing
+  //     missed (see CARRY_FORWARD_DAYS). They go through steps 2–6 like the
+  //     rest; completed ones skip their detail fetch via the cache.
+  const freshCount = listing.length; // the drop guard (step 5) checks this
+  for (const r of listing) r.lastSeenAt = runAt;
+  const listedCases = new Set(listing.map((r) => r.caseNumber));
+  const cutoff = Date.parse(runAt) - CARRY_FORWARD_DAYS * DAY_MS;
+  let carried = 0;
+  let expired = 0;
+  for (const prev of previous?.records || []) {
+    if (!prev.caseNumber || listedCases.has(prev.caseNumber)) continue;
+    // Records from before this field existed were seen when that file was made.
+    const lastSeenAt = prev.lastSeenAt || previous.generatedAt;
+    if (!lastSeenAt || Date.parse(lastSeenAt) < cutoff) {
+      expired++;
+      console.log(`  dropping ${prev.caseNumber}: not seen since ${lastSeenAt || "unknown"}`);
+      continue;
+    }
+    listing.push({
+      caseTitle: prev.caseTitle,
+      permalink: prev.permalink,
+      status: prev.status,
+      type: prev.type,
+      caseNumber: prev.caseNumber,
+      stage: prev.stage,
+      effectiveDate: prev.effectiveDate,
+      anzsic: prev.anzsic,
+      parties: prev.parties,
+      carriedForward: true,
+      lastSeenAt,
+    });
+    listedCases.add(prev.caseNumber);
+    carried++;
+  }
+  console.log(
+    `  listing: ${freshCount} seen this run, ${carried} carried forward, ${expired} dropped`
+  );
+
   // 2. Enrich completed/ceased/suspended matters with the publication date, the
   //    determination outcome, and the determination-PDF filename date.
   //    Under-assessment matters have none of these → skip the detail page.
@@ -516,7 +560,18 @@ async function main() {
       continue;
     }
 
-    const html = await fetchHtml(r.permalink);
+    let html;
+    try {
+      html = await fetchHtml(r.permalink);
+    } catch (err) {
+      if (!r.carriedForward) throw err;
+      // A carried case's page may be gone; keep what we had rather than fail the run.
+      console.warn(`  ${r.caseNumber} (carried forward): ${err.message}; keeping previous values`);
+      r.publicationDate = prev?.publicationDate ?? null;
+      r.determinationOutcome = prev?.determinationOutcome ?? null;
+      r.filenameDate = null;
+      continue;
+    }
     const detail = parseDetail(html);
     r.publicationDate = detail.publicationDate;
     r.determinationOutcome = detail.determinationOutcome;
@@ -588,11 +643,13 @@ async function main() {
   }
 
   // 5. Robustness guard: don't let an implausible scrape clobber good data.
+  //    Compares the cases seen this run, not the total: carried-forward cases
+  //    would otherwise hide a broken listing scrape.
   if (previous?.records?.length) {
     const prevCount = previous.records.length;
-    if (listing.length < prevCount * (1 - MAX_DROP_RATIO)) {
+    if (freshCount < prevCount * (1 - MAX_DROP_RATIO)) {
       throw new Error(
-        `Record count dropped from ${prevCount} to ${listing.length} ` +
+        `Record count dropped from ${prevCount} to ${freshCount} ` +
           `(> ${MAX_DROP_RATIO * 100}% drop). Keeping last good data.json.`
       );
     }
@@ -617,17 +674,25 @@ async function main() {
     overridden: r.overridden,
     overriddenFields: r.overriddenFields,
     notes: r.notes || "",
+    carriedForward: Boolean(r.carriedForward),
+    lastSeenAt: r.lastSeenAt,
   }));
 
+  //    lastSeenAt and carriedForward are record-keeping, not data: a run that
+  //    only changes them still saves them, but keeps generatedAt (the time of
+  //    the last real change, which the site's "may be delayed" note relies on).
   const signature = (recs) =>
-    JSON.stringify(recs.map((x) => ({ ...x })));
-  if (previous?.records && signature(previous.records) === signature(records)) {
+    JSON.stringify(recs.map(({ carriedForward, lastSeenAt, ...x }) => x));
+  const dataChanged =
+    !previous?.records || signature(previous.records) !== signature(records);
+  if (!dataChanged && JSON.stringify(previous.records) === JSON.stringify(records)) {
     console.log("No change vs last good data.json — nothing to write.");
     return;
   }
+  if (!dataChanged) console.log("Data unchanged; saving lastSeenAt only.");
 
   const out = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: dataChanged ? runAt : previous.generatedAt,
     sourceUrl: REGISTER_URL,
     recordCount: records.length,
     records,

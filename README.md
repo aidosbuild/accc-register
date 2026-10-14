@@ -116,10 +116,17 @@ Defined in `.github/workflows/update.yml`:
 - The Action **won't commit a broken scrape**: it aborts (keeping the last good
   `data.json`) if the scrape errors, returns zero records, or the record count
   drops more than 20% versus the previous `data.json`.
-- It **commits only when the data actually changed**, so `generatedAt` reflects
-  the last real change. If the register is quiet for over ~24 hours the site
-  shows a subtle amber "data may be delayed" note — the ACCC is known to publish
-  late, especially for waivers.
+- **Cases aren't lost at page boundaries.** The ACCC doesn't keep same-date
+  cases in a fixed order between page requests, so a case at the edge of a page
+  can be missed on one run. Cases from the previous `data.json` that this run
+  missed are carried forward (`carriedForward: true`). Every record has
+  `lastSeenAt`, and a carried case is dropped only after 14 days unseen. The
+  20% guard counts only cases seen this run.
+- `generatedAt` reflects the last real change: a run that only updates
+  `lastSeenAt`/`carriedForward` still saves them but keeps `generatedAt`. If
+  the register is quiet for over ~24 hours the site shows a subtle amber "data
+  may be delayed" note — the ACCC is known to publish late, especially for
+  waivers.
 
 ## Running the scraper locally (optional)
 

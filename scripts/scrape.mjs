@@ -151,9 +151,38 @@ function parseListing(html) {
         card,
         "field--name-field-acccgov-pub-reg-date"
       ),
+      anzsic: anzsicCodes($, card),
+      parties: {
+        acquirers: partyNames($, card, "field--name-field-acccgov-applicants"),
+        targets: partyNames($, card, "field--name-field-acccgov-pub-reg-targets"),
+        others: partyNames($, card, "field--name-field-acccgov-other-parties"),
+      },
     });
   });
   return records;
+}
+
+/**
+ * The ANZSIC codes in a card's collapsed body, e.g.
+ * ["2469 Other Specialised Machinery and Equipment Manufacturing", "4900 Air and Space Transport"].
+ * The ACCC runs them together as "code name; code name; ".
+ */
+function anzsicCodes($, card) {
+  return clean(
+    card.find(".field--name-field-acccgov-anzsic-code .field__item").first().text()
+  )
+    .split(/;\s*/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+/** Party names in one of a card's party fields (names only, not ABNs or company numbers). */
+function partyNames($, card, fieldClass) {
+  return card
+    .find(`.${fieldClass} .field_acccgov_name`)
+    .map((_, el) => clean($(el).text()))
+    .get()
+    .filter(Boolean);
 }
 
 /**
@@ -578,6 +607,8 @@ async function main() {
     status: r.status,
     stage: r.stage,
     effectiveDate: r.effectiveDate,
+    anzsic: r.anzsic || [],
+    parties: r.parties || { acquirers: [], targets: [], others: [] },
     determinationDate: r.determinationDate ?? null,
     publicationDate: r.publicationDate ?? null,
     determinationOutcome: r.determinationOutcome ?? null,

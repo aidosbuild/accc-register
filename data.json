@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-14T13:28:43.421Z",
   "sourceUrl": "https://www.accc.gov.au/public-registers/mergers-and-acquisitions-registers/acquisitions-register",
-  "recordCount": 722,
+  "recordCount": 739,
   "records": [
     {
       "caseTitle": "FlightSafety International / Commercial Training Solutions",
@@ -24619,6 +24619,617 @@
       "overridden": false,
       "overriddenFields": [],
       "notes": ""
+    },
+    {
+      "caseTitle": "Star Hotels Group - Ocean International Hotel, Mackay QLD",
+      "caseNumber": "WA-15041",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/star-hotels-group-ocean-international-hotel-mackay-qld",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-08-21",
+      "anzsic": [
+        "4400 Accommodation",
+        "4511 Cafes and Restaurants",
+        "4520 Pubs, Taverns and Bars",
+        "6240 Financial Asset Investing"
+      ],
+      "parties": {
+        "acquirers": [
+          "MIGALOO QLD PTY LTD",
+          "NORTH QUEENSLAND HOTEL INVESTMENTS PTY LTD"
+        ],
+        "targets": [
+          "SEAGUE PTY LTD",
+          "OIH Mackay Pty Ltd"
+        ],
+        "others": []
+      },
+      "determinationDate": "2026-09-14",
+      "publicationDate": "2026-09-14",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 16,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Cinven and La Caisse – Optio Group",
+      "caseNumber": "WA-65034",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/cinven-and-la-caisse-%E2%80%93-optio-group",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-08-21",
+      "anzsic": [
+        "6240 Financial Asset Investing",
+        "6420 Auxiliary Insurance Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "Welling Bidco Limited"
+        ],
+        "targets": [
+          "Spring Topco Limited",
+          "Optio Group Limited"
+        ],
+        "others": [
+          "Cinven Limited",
+          "Caisse de dépôt et placement du Québec"
+        ]
+      },
+      "determinationDate": "2026-09-17",
+      "publicationDate": "2026-09-17",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 19,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Eldridge – Ausenco",
+      "caseNumber": "WA-25043",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/eldridge-%E2%80%93-ausenco",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-08-13",
+      "anzsic": [
+        "3101 Road and Bridge Construction",
+        "3109 Other Heavy and Civil Engineering Construction",
+        "6240 Financial Asset Investing",
+        "6419 Other Auxiliary Finance and Investment Services",
+        "6923 Engineering Design and Engineering Consulting Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "Eldridge Ausenco MidCo 3, LLC"
+        ],
+        "targets": [
+          "AUSENCO PTY LTD",
+          "Resource Capital Fund VI L.P"
+        ],
+        "others": [
+          "Eldridge Industries, LLC"
+        ]
+      },
+      "determinationDate": "2026-08-27",
+      "publicationDate": "2026-08-27",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 10,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Count – O’Brien Accountants & Advisors",
+      "caseNumber": "WA-30026",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/count-%E2%80%93-o%E2%80%99brien-accountants-advisors",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-07-10",
+      "anzsic": [
+        "6419 Other Auxiliary Finance and Investment Services",
+        "6932 Accounting Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "Count Limited"
+        ],
+        "targets": [
+          "OBM Financial Services Pty Ltd"
+        ],
+        "others": []
+      },
+      "determinationDate": "2026-08-04",
+      "publicationDate": "2026-08-04",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 17,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "VSA - SprayLine",
+      "caseNumber": "MN-30022",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/vsa-sprayline",
+      "type": "Notification",
+      "status": "Assessment completed",
+      "stage": "Phase 1 - initial assessment",
+      "effectiveDate": "2026-07-06",
+      "anzsic": [
+        "3101 Road and Bridge Construction"
+      ],
+      "parties": {
+        "acquirers": [
+          "VSA ROADS PTY LTD"
+        ],
+        "targets": [
+          "Head, Transport for Victoria"
+        ],
+        "others": [
+          "COLAS AUSTRALIA GROUP PTY LTD",
+          "COLAS CONTRACTING PTY LTD"
+        ]
+      },
+      "determinationDate": "2026-08-20",
+      "publicationDate": "2026-08-20",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 33,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Sika AG - Akkim",
+      "caseNumber": "MN-40027",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/sika-ag-akkim",
+      "type": "Notification",
+      "status": "Assessment completed",
+      "stage": "Phase 1 - initial assessment",
+      "effectiveDate": "2026-06-25",
+      "anzsic": [
+        "1915 Adhesive Manufacturing"
+      ],
+      "parties": {
+        "acquirers": [
+          "Sika AG"
+        ],
+        "targets": [
+          "Akde Kimya Sanayi ve Ticaret Anonim Şirketi",
+          "Akfix Kimya Lojistik Hizmetleri Limited Şirketi",
+          "Akkim Europe SRL",
+          "Akkim Yapi Kimyasallari Sanayi ve Ticaret Anonim Şirketi"
+        ],
+        "others": []
+      },
+      "determinationDate": "2026-07-16",
+      "publicationDate": "2026-07-16",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 15,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Apax Partners LLP – Sedex Information Exchange Limited",
+      "caseNumber": "WA-45017",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/apax-partners-llp-%E2%80%93-sedex-information-exchange-limited",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-05-28",
+      "anzsic": [
+        "5420 Software Publishing",
+        "5922 Electronic Information Storage Services",
+        "6240 Financial Asset Investing"
+      ],
+      "parties": {
+        "acquirers": [
+          "Smith UK Bidco Limited"
+        ],
+        "targets": [
+          "Sedex Information Exchange Limited"
+        ],
+        "others": [
+          "Magaya Corporation",
+          "Foods Connected Limited",
+          "Apax Partners LLP",
+          "Viper HoldCo Limited"
+        ]
+      },
+      "determinationDate": "2026-06-26",
+      "publicationDate": "2026-06-26",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 20,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Heidelberg Materials Australia – construction materials business of MAAS",
+      "caseNumber": "MN-50009",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/heidelberg-materials-australia-%E2%80%93-construction-materials-business-of-maas",
+      "type": "Notification",
+      "status": "Assessment completed",
+      "stage": "Phase 1 - initial assessment",
+      "effectiveDate": "2026-05-28",
+      "anzsic": [
+        "0911 Gravel and Sand Quarrying",
+        "0919 Other Construction Material Mining",
+        "1709 Other Petroleum and Coal Product Manufacturing",
+        "2033 Ready-Mixed Concrete Manufacturing",
+        "2921 Waste Treatment and Disposal Services",
+        "2922 Waste Remediation and Materials Recovery Services",
+        "6925 Scientific Testing and Analysis Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "HEIDELBERG MATERIALS AUSTRALIA HOLDINGS PTY LTD"
+        ],
+        "targets": [
+          "MAAS GROUP HOLDINGS LIMITED",
+          "MACHINERY SALES PTY LIMITED",
+          "REGIONAL GROUP AUSTRALIA PTY LIMITED",
+          "MACQUARIE GEOTECHNICAL PTY LIMITED"
+        ],
+        "others": []
+      },
+      "determinationDate": "2026-07-30",
+      "publicationDate": "2026-07-30",
+      "determinationOutcome": "Approved with conditions",
+      "reviewComplete": true,
+      "durationBusinessDays": 44,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Imagine Education – childcare centres ownership restructure",
+      "caseNumber": "WA-80019",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/imagine-education-%E2%80%93-childcare-centres-ownership-restructure",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-05-22",
+      "anzsic": [
+        "6240 Financial Asset Investing",
+        "8010 Preschool Education",
+        "8710 Child Care Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "Waterworks Education Group Pty Ltd",
+          "Imagine Education Investments Trust",
+          "POLAR 993 PTY LTD as trustee of Imagine Education Investments Trust"
+        ],
+        "targets": [
+          "Waterworks Childcare Investments Pty Ltd"
+        ],
+        "others": [
+          "Imagine Education Investments Pty Ltd"
+        ]
+      },
+      "determinationDate": "2026-06-22",
+      "publicationDate": "2026-06-22",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 20,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Hexagon - Waygate Technologies",
+      "caseNumber": "WA-35022",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/hexagon-waygate-technologies",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-05-22",
+      "anzsic": [
+        "2419 Other Professional and Scientific Equipment Manufacturing",
+        "6910 Scientific Research Services",
+        "6925 Scientific Testing and Analysis Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "Hexagon Manufacturing Intelligence LLC"
+        ],
+        "targets": [
+          "BAKER HUGHES DIGITAL SOLUTIONS AUSTRALIA PTY LTD",
+          "Baker Hughes Holdings LLC"
+        ],
+        "others": [
+          "Hexagon AB"
+        ]
+      },
+      "determinationDate": "2026-06-22",
+      "publicationDate": "2026-06-22",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 20,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Frasers Group – Accent Group",
+      "caseNumber": "MN-30008",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/frasers-group-%E2%80%93-accent-group",
+      "type": "Notification",
+      "status": "Assessment completed",
+      "stage": "Phase 1 - initial assessment",
+      "effectiveDate": "2026-05-19",
+      "anzsic": [
+        "3712 Clothing and Footwear Wholesaling",
+        "4251 Clothing Retailing",
+        "4252 Footwear Retailing"
+      ],
+      "parties": {
+        "acquirers": [
+          "Frasers Group plc"
+        ],
+        "targets": [
+          "ACCENT GROUP LIMITED"
+        ],
+        "others": []
+      },
+      "determinationDate": "2026-06-11",
+      "publicationDate": "2026-06-15",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 16,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Constellation Software - DerbySoft Holdings",
+      "caseNumber": "WA-90014",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/constellation-software-derbysoft-holdings",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-04-29",
+      "anzsic": [
+        "5420 Software Publishing",
+        "6240 Financial Asset Investing"
+      ],
+      "parties": {
+        "acquirers": [
+          "Sail Parent Holdco Ltd"
+        ],
+        "targets": [
+          "DerbySoft Holdings Limited"
+        ],
+        "others": [
+          "DerbySoft (Shanghai) Co. Limited",
+          "Constellation Software Inc.",
+          "CONSTELLATION SOFTWARE AUSTRALIA PTY LTD",
+          "Vela Software International Inc.",
+          "DerbySoft Inc.",
+          "DerbySoft (Hong Kong) Limited"
+        ]
+      },
+      "determinationDate": "2026-05-15",
+      "publicationDate": "2026-05-15",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 12,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Resonetics – Resolution Medical",
+      "caseNumber": "WA-55009",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/resonetics-%E2%80%93-resolution-medical",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-02-26",
+      "anzsic": [
+        "2412 Medical and Surgical Equipment Manufacturing",
+        "6923 Engineering Design and Engineering Consulting Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "Resonetics, LLC"
+        ],
+        "targets": [
+          "Resolution Medical MidCo, LLC",
+          "Arcline Capital Partners II-A LP",
+          "Arcline Resolution Blocker, Inc",
+          "Resolution Medical TopCo LP"
+        ],
+        "others": [
+          "GTCR (Regatta Investors) LP",
+          "CP Granite Holdings, L.P.",
+          "Regatta Medical Holdings, LLC"
+        ]
+      },
+      "determinationDate": "2026-03-11",
+      "publicationDate": "2026-03-11",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 9,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T08:28:31.286Z"
+    },
+    {
+      "caseTitle": "Apax Funds – Techoraco Limited and Institutional Investor LLC",
+      "caseNumber": "WA-30027",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/apax-funds-%E2%80%93-techoraco-limited-and-institutional-investor-llc",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-07-24",
+      "anzsic": [
+        "6240 Financial Asset Investing",
+        "7299 Other Administrative Services n.e.c."
+      ],
+      "parties": {
+        "acquirers": [
+          "Assemble US Bidco Inc",
+          "Assemble UK Bidco Limited"
+        ],
+        "targets": [
+          "Techoraco Limited",
+          "Institutional Investor LLC"
+        ],
+        "others": []
+      },
+      "determinationDate": "2026-08-20",
+      "publicationDate": "2026-08-20",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 19,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T06:51:42.391Z"
+    },
+    {
+      "caseTitle": "CVC Capital Partners – DistroKid",
+      "caseNumber": "WA-25041",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/cvc-capital-partners-%E2%80%93-distrokid",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-07-24",
+      "anzsic": [
+        "5522 Music and Other Sound Recording Activities"
+      ],
+      "parties": {
+        "acquirers": [
+          "Dream HoldCo LLC"
+        ],
+        "targets": [
+          "DK Holdco, LLC"
+        ],
+        "others": [
+          "CVC Capital Partners plc"
+        ]
+      },
+      "determinationDate": "2026-08-19",
+      "publicationDate": "2026-08-19",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 18,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T06:51:42.391Z"
+    },
+    {
+      "caseTitle": "CrowdStrike – intellectual property and associated technology assets of XM Cyber",
+      "caseNumber": "WA-35036",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/crowdstrike-%E2%80%93-intellectual-property-and-associated-technology-assets-of-xm-cyber",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-07-24",
+      "anzsic": [
+        "7000 Computer System Design and Related Services"
+      ],
+      "parties": {
+        "acquirers": [
+          "CrowdStrike, Inc."
+        ],
+        "targets": [
+          "Schwarz Digits KG",
+          "XM Cyber Ltd."
+        ],
+        "others": [
+          "CrowdStrike Holdings, Inc."
+        ]
+      },
+      "determinationDate": "2026-08-19",
+      "publicationDate": "2026-08-19",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 18,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T06:51:42.391Z"
+    },
+    {
+      "caseTitle": "VFMC – CorVal Land and Operator Trusts",
+      "caseNumber": "WA-35008",
+      "permalink": "https://www.accc.gov.au/public-registers/acquisitions-and-mergers-registers/acquisitions-register/vfmc-%E2%80%93-corval-land-and-operator-trusts",
+      "type": "Waiver",
+      "status": "Assessment completed",
+      "stage": "",
+      "effectiveDate": "2026-03-09",
+      "anzsic": [
+        "6419 Other Auxiliary Finance and Investment Services",
+        "6711 Residential Property Operators"
+      ],
+      "parties": {
+        "acquirers": [
+          "TRANSPORT ACCIDENT COMMISSION",
+          "VICTORIAN MANAGED INSURANCE AUTHORITY",
+          "VICTORIAN WORKCOVER AUTHORITY",
+          "VICTORIAN FUNDS MANAGEMENT CORPORATION",
+          "EMERGENCY SERVICES SUPER BOARD"
+        ],
+        "targets": [
+          "CORVAL PARTNERS LIMITED"
+        ],
+        "others": [
+          "STATE STREET AUSTRALIA LTD"
+        ]
+      },
+      "determinationDate": "2026-03-26",
+      "publicationDate": "2026-03-26",
+      "determinationOutcome": "Approved",
+      "reviewComplete": true,
+      "durationBusinessDays": 13,
+      "overridden": false,
+      "overriddenFields": [],
+      "notes": "",
+      "carriedForward": true,
+      "lastSeenAt": "2026-10-14T06:51:42.391Z"
     }
   ]
 }
